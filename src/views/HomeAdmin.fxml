@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="564.0" style="-fx-background-image: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.image.Image?&gt;&lt;?import javafx.scene.image.ImageView?&gt;&lt;ImageView fitHeight=&quot;374.0&quot; fitWidth=&quot;374.0&quot; layoutX=&quot;184.0&quot; layoutY=&quot;27.0&quot; pickOnBounds=&quot;true&quot; preserveRatio=&quot;true&quot; xmlns=&quot;http://javafx.com/javafx/8.0.121&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot;&gt;   &lt;image&gt;      &lt;Image url=&quot;@home.jpg&quot; /&gt;   &lt;/image&gt;&lt;/ImageView&gt;;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeAdminController">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="556.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <FlowPane layoutY="27.0" prefHeight="374.0" prefWidth="180.0" style="-fx-background-color: #475586;">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@admin.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="124.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="#6f6161" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="       Espace  Admin" wrappingWidth="183.267578125">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+         </children></FlowPane>
+      <Button fx:id="newcommentaire" layoutX="406.0" layoutY="82.0" mnemonicParsing="false" onAction="#newcommentaire" prefHeight="87.0" prefWidth="128.0" text="New Commentaire" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <FlowPane layoutX="180.0" layoutY="25.0" prefHeight="48.0" prefWidth="103.0" />
+      <ImageView fitHeight="374.0" fitWidth="374.0" layoutX="184.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="statistique1" layoutX="403.0" layoutY="307.0" mnemonicParsing="false" onAction="#statistique1" prefHeight="87.0" prefWidth="128.0" text="Statistique AVIS" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="newreclamation" layoutX="401.0" layoutY="202.0" mnemonicParsing="false" onAction="#newreclamation" prefHeight="87.0" prefWidth="128.0" text="New Reclamation" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="newcommentaire1" layoutX="398.0" layoutY="90.0" mnemonicParsing="false" onAction="#newcommentaire" prefHeight="87.0" prefWidth="128.0" text="New Commentaire" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="Avis" layoutX="224.0" layoutY="202.0" mnemonicParsing="false" onAction="#Avis" prefHeight="87.0" prefWidth="128.0" text="Avis" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="affiche" layoutX="224.0" layoutY="92.0" mnemonicParsing="false" onAction="#Reclamation" prefHeight="87.0" prefWidth="128.0" text="Tous les Reclamation" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="statistique" layoutX="225.0" layoutY="309.0" mnemonicParsing="false" onAction="#statistique" prefHeight="87.0" prefWidth="128.0" text="Statistique REC" textFill="#475586">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label graphicTextGap="9.0" layoutX="164.0" layoutY="25.0" prefHeight="48.0" prefWidth="393.0" text="                   RECLAMATION" textFill="#475586" textOverrun="LEADING_ELLIPSIS" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="N_RESIZE" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

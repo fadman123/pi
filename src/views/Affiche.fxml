@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficheController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="443.0" prefWidth="703.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <TableView id="table" fx:id="table" layoutX="180.0" prefHeight="252.0" prefWidth="459.0">
+              <columns>
+                <TableColumn id="id" fx:id="id" prefWidth="42.0" text="id" />
+                <TableColumn id="titre" fx:id="titre" minWidth="0.0" prefWidth="55.0" text="titre" />
+                  <TableColumn id="text" fx:id="text" prefWidth="95.0" text="text" />
+                  <TableColumn id="email" fx:id="email" prefWidth="99.0" text="Email" />
+                  <TableColumn id="date" fx:id="date" minWidth="0.0" prefWidth="65.0" text="date" />
+                  <TableColumn id="service" fx:id="service" prefWidth="79.0" text="service" />
+              </columns>
+            </TableView>
+            <Button fx:id="modifier" layoutX="1.0" layoutY="91.0" mnemonicParsing="false" onAction="#modi" prefHeight="25.0" prefWidth="180.0" text="Modifier" />
+            <Button fx:id="supprimer" layoutX="1.0" layoutY="134.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="180.0" text="supprimer" />
+            <Button fx:id="Ajouter" layoutY="175.0" mnemonicParsing="false" onAction="#affiche" prefHeight="25.0" prefWidth="180.0" text="Ajouter" />
+            <Button layoutY="218.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="180.0" text="Consulter les Reclamation" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

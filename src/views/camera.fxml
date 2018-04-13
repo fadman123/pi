@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="186.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CameraController">
+   <children>
+      <ImageView fx:id="imag" fitHeight="186.0" fitWidth="225.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="ariere" layoutX="184.0" layoutY="161.0" mnemonicParsing="false" onAction="#arriere" text="avis" />
+   </children>
+</AnchorPane>

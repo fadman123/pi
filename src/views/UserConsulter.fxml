@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="448.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserConsulterController">
+  <children>
+    <MenuBar prefHeight="175.0" prefWidth="604.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="485.0" prefWidth="742.0" style="-fx-background-color: #f2efef;" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane prefHeight="414.0" prefWidth="141.0" style="-fx-background-color: #BA2E45;">
+               <children>
+                  <Label layoutY="-7.0" prefHeight="91.0" prefWidth="141.0" text=" espace commentaire" textFill="#fcf8f8">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="277.0" prefHeight="19.0" prefWidth="107.0" text="vous pouvez " textFill="#fcf9f9">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="308.0" prefHeight="19.0" prefWidth="107.0" text="commenter ici" textFill="#fcf9f9">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="45.0" prefHeight="17.0" prefWidth="141.0" text="----------------------------" textFill="#fcf9f9" />
+                  <Label layoutX="6.0" layoutY="65.0" prefHeight="19.0" prefWidth="107.0" text="Bienvenu " textFill="#fcf9f9">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="132.0" layoutX="5.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@10-512.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="afRec" layoutX="140.0" prefHeight="414.0" prefWidth="191.0" style="-fx-background-color: #BA2E49;">
+               <children>
+                  <Label layoutX="31.0" layoutY="-6.0" prefHeight="91.0" prefWidth="200.0" text="Votre Reclamation :" textFill="#f2efef">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="94.0" text="Date:">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="146.0" text="Titre:">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="45.0" prefHeight="17.0" prefWidth="220.0" text="--------------------------------------------" textFill="#fcf9f9" />
+                  <Label layoutX="8.0" layoutY="207.0" text="Détail:">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="datetxt" layoutX="46.0" layoutY="113.0" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #f2efef; -fx-background-radius: 1em;" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="titretxt" layoutX="46.0" layoutY="166.0" lineSpacing="1.0" prefHeight="32.0" prefWidth="122.0" style="-fx-background-color: #f2efef; -fx-background-radius: 1em;" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="texttxt" layoutX="28.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="175.13671875" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="371.0" prefHeight="58.0" prefWidth="311.0" style="-fx-background-color: #BA2E59;">
+               <children>
+                  <Label layoutX="14.0" layoutY="19.0" text="Commentaire :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="51.0" fitWidth="42.0" layoutX="269.0" layoutY="8.0" onMouseClicked="#retourner" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@fl.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TextArea fx:id="commenter" layoutX="371.0" layoutY="348.0" prefHeight="66.0" prefWidth="269.0" />
+            <ImageView fitHeight="42.0" fitWidth="50.0" layoutX="640.0" layoutY="372.0" onMouseClicked="#ajouter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@env.jpg" />
+               </image>
+            </ImageView>
+            <Pane fx:id="panecommentaire" layoutX="371.0" layoutY="58.0" prefHeight="289.0" prefWidth="311.0" />
+         </children>
+    </AnchorPane>
+      <Accordion />
+  </children>
+</VBox>
